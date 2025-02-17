@@ -2,12 +2,12 @@
 
 ControllerPtr myControllers[BP32_MAX_CONTROLLERS];
 
-const int pwmPin1 = 12;  // Signal output pin for Motor 1 (PWM pin)
-const int pwmPin2 = 18; // Signal output pin for Motor 2 (PWM pin)
-const int digPin1 = 13; // Digital pin for Motor control (e.g., direction)
-const int digPin2 = 14; // Digital pin for Motor control (e.g., direction)
-const int digPin3 = 16; // Digital pin for Motor control (e.g., enable)
-const int digPin4 = 17; // Digital pin for Motor control (e.g., enable)
+const int pwmPin1 = 18;  // Signal output pin for Motor 1 (PWM pin)
+const int pwmPin2 = 12; // Signal output pin for Motor 2 (PWM pin)
+const int digPin1 = 17; // Digital pin for Motor control (e.g., direction)
+const int digPin2 = 16; // Digital pin for Motor control (e.g., direction)
+const int digPin3 = 14; // Digital pin for Motor control (e.g., enable)
+const int digPin4 = 13; // Digital pin for Motor control (e.g., enable)
 const int channel1 = 0; // LEDC channel for PWM of Motor 1
 const int channel2 = 1; // LEDC channel for PWM of Motor 2
 
