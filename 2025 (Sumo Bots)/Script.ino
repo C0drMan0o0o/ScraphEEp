@@ -44,6 +44,10 @@ void setup() {
   pinMode(digPin2, OUTPUT);
   pinMode(digPin3, OUTPUT);
   pinMode(digPin4, OUTPUT);
+  digitalWrite(digPin1, LOW);
+  digitalWrite(digPin2, LOW);
+  digitalWrite(digPin3, LOW);
+  digitalWrite(digPin4, LOW);
 }
 
 void onConnectedController(ControllerPtr ctl) {
@@ -64,10 +68,6 @@ void onDisconnectedController(ControllerPtr ctl) {
       Serial.print("CALLBACK: Controller disconnected, index=");
       Serial.println(i);
       myControllers[i] = nullptr;
-      digitalWrite(digPin1, LOW);
-      digitalWrite(digPin2, LOW);
-      digitalWrite(digPin3, LOW);
-      digitalWrite(digPin4, LOW);
       return;
     }
   }
